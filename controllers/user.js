@@ -82,7 +82,7 @@ exports.postCreateAccount = (req, res, next) => {
    var p2 = req.body.con_pass;
 
    if (p1 != p2) { // if password doesn't match 
-      return res.render("user/createAccount", { user: "", msg: [], err: ["Password Doesn't Match"] })
+      return res.render("user/createAccount", { user: "", msg: [], err: ["Mật khẩu không trùng khớp"] })
    }
 
    var data = "INSERT INTO user " +
@@ -195,7 +195,7 @@ exports.getShowStatus = (req, res, next) => {
             result[i].date = a.slice(0, 15);
          }
          if (result.length < 1) {
-            res.render('user/statusShow', { user: req.session.mail, msg: "", err: "You dont have any data", data: result });
+            res.render('user/statusShow', { user: req.session.mail, msg: "", err: "Chưa có dữ liệu", data: result });
          }
          else {
             res.render('user/statusShow', { user: req.session.mail, msg: "", err: "", data: result });

@@ -17,7 +17,7 @@ router.route('/createaccount')
        .post(userControler.postCreateAccount); //post request for create account   
 
 router.route('/category')
-       .get(userControler.authentication,userControler.getCategory) //get request for Category  
+       .get(userControler.authentication,userControler.getCategory) //get request for Danh mục  
        .post(userControler.postCategory) //post request form the category
 router.route('/boooking')
        .post(userControler.postBooking) //post booking data    

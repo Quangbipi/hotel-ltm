@@ -67,7 +67,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="/admin/logout" data-toggle="modal" data-target="#exampleModal">
-              <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+              <i class="fa fa-fw fa-sign-out"></i>Đăng xuất</a>
           </li>
         </ul>
       </div>
@@ -83,13 +83,13 @@
             <h3 style="color: #ff304f;" class="text-center"><%=err%></h3><br>
             <%   } %>
             <form action="/admin/addhotel" method="POST" enctype="multipart/form-data">
-              <p>Category</p>
+              <p>Danh mục</p>
               <select name="cat" class="form-control">
                 <option value="Business Class">Business Class</option>
                 <option value="First class">First class</option>
                 <option value="Seceond class">Seceond class</option>
             </select>
-              <!-- <input type="text" class="form-control" name="cat" placeholder="Category name"> -->
+              <!-- <input type="text" class="form-control" name="cat" placeholder="Danh mục name"> -->
               <p>Room Type</p>
               <select name="type" class="form-control">
                 <option value="Single Bed">Single Bed</option>
@@ -125,7 +125,7 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
-    <!-- Logout Modal-->
+    <!-- Đăng xuất Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -136,10 +136,10 @@
               <span aria-hidden="true">×</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-body">Select "Đăng xuất" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="/admin/logout">Logout</a>
+            <a class="btn btn-primary" href="/admin/logout">Đăng xuất</a>
           </div>
         </div>
       </div>
