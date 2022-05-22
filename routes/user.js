@@ -1,10 +1,10 @@
-const express = require('express');
+const express = require('express'); // nap express
 const path = require('path');
 
 
 const router = express.Router();
 
-const userControler = require('../controllers/user');
+const userControler = require('../controllers/user'); // initialization
 
 router.get('/',userControler.getHome); //home page 
 
